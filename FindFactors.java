@@ -6,6 +6,7 @@ public class FindFactors {
         int number = 33;
         newfindfactors(sortedarray,number);
 
+
     }
 
     //O(n/2)
@@ -30,6 +31,7 @@ public class FindFactors {
 
             }
         }
+        System.out.println("There are not multiples of " + goal);
 
 
     }
