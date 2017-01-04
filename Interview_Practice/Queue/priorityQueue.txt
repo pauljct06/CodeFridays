@@ -1,0 +1,35 @@
+su = super
+pl = plat
+go = gold
+si = silver
+
+k = 10
+
+I use a priority queue for this algorithm
+pQ -> []
+
+ * insert si4
+
+pQ -> [si4]
+
+ * insert si9
+
+pQ -> [si9, si4]
+
+...
+after multiple insertions
+
+pQ -> [su8, su8, su4, pl6, go4, si9, si6, si4, si3, si2]
+
+ * insert an 11th element (go5) when k = 10 is full
+
+
+ pQ -> [su8, su8, su4, pl6, ,go5 go4, si9, si6, si4, si3]
+ // I moved the last item in the pQ and placed it in a new pQ for removed frequent fliers
+
+ pQremoved -> [si2]
+
+ * frequent flier su4 cancels upgrade
+
+ pQ -> [su8, su8, pl6, ,go5 go4, si9, si6, si4, si3, si2]
+ // removed frequent flier, shifted queue and added back si2 from PQremoved into pQ
