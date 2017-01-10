@@ -10,6 +10,7 @@
 * Input:   str = "Ab,c,de!$"
 * Output:  str = "ed,c,bA!$
 */
+
 public class ReverseWithoutSpecialsChars {
   public static void main(String[] args) {
     String input = "a,b$c";
